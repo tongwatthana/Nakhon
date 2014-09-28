@@ -1,0 +1,3 @@
+# Module nakhon
+# RPC service class, partial path of RPC policy file
+th.ac.utcc.nakhon.client.GreetingService, 68BF246772800DCB3BF08655128A447B.gwt.rpc

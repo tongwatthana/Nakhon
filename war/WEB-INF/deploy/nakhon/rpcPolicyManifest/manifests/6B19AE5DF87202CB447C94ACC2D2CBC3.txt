@@ -1,0 +1,2 @@
+serviceClass: th.ac.utcc.nakhon.client.GreetingService
+path: 68BF246772800DCB3BF08655128A447B.gwt.rpc
