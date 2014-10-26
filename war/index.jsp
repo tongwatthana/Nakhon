@@ -43,9 +43,9 @@
             String username_ses = (String)session.getAttribute("username_ses");
             String firstname_ses = (String)session.getAttribute("firstname_ses");
             if(username_ses==null) { %>
-            <li><a href="login.html">login</a></li>
+            <li><a href="login.html">เข้าสู่ระบบ</a></li>
             <% } else { %>
-            <li><a href="logout.jsp"><%=firstname_ses%> logout</a></li>
+            <li><a href="logout.jsp"><%=firstname_ses%>ออกจากระบบ</a></li>
          <% } %>
             </ul> 
 		<h3 class="text-muted"></h3>
@@ -60,12 +60,13 @@
       </div>
       
       
+<div><marquee onmouseover="this.stop();" onmouseout="this.start();" id="result"></marquee></div>
 
       <!-- Jumbotron -->
       <div class="jumbotron">
         <h4>คำขวัญจังหวัดนครปฐม</h4>
       <marquee scrollamount="6" >
-      <img src="pic/1.png">
+      <img src="pic/1.PNG">
       <img src="pic/2.PNG">
       <img src="pic/3.PNG">
       <img src="pic/4.PNG">
@@ -117,5 +118,29 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="http://code.jquery.com/jquery.js"></script>
 	<script src="js/bootstrap.min.js"></script>
+	
+	<script src="js/jquery-1.10.2.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script>
+            $(document).ready(function (){
+                $(".tool").tooltip();
+            });
+            
+        </script>
+        
+        
+<script>
+	var xmlhttp = new XMLHttpRequest();
+
+	xmlhttp.onreadystatechange=function(){
+		if(xmlhttp.readyState==4 && xmlhttp.status==200){ 
+			document.getElementById("result").innerHTML = xmlhttp.responseText;		
+		}
+	}
+
+	var url="loadtext.jsp";
+	xmlhttp.open("GET",url,true);
+	xmlhttp.send();
+</script>   
   </body>
 </html>
