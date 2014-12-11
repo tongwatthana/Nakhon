@@ -7,7 +7,7 @@
  //Query Database
   String tbUsername = "admin";
   String tbPassword = "12345";
-  String firstname = "nittaya";
+  String firstname = "Nittaya";
   
   if(userName.equals(tbUsername) && passWord.equals(tbPassword)){
 	  out.println("Welcome to Nakhonpathom");

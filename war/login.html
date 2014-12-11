@@ -10,18 +10,32 @@
 <center>
 <img src="pic/header.png">
 <div>
-<a><h1><font COLOR=#111111>เข้าสู่ระบบ</font></h1></a>
+<a><h2><font color = "#0080FF">เข้าสู่ระบบ</font></h2></a>
 </div></center><br>
 
 <form method="post" action="action.jsp">
-<center><label for="userName">Username :</label>
-<input type="text" name="username" size="20"></center>
-<br>
-<center><label for="pwd">Password : &nbsp;</label>
-<input type="password" name="password" size="20">
-<br>
-<label> </label>
-<input type="submit" value="login"></form></center>
+ <table border="0" cellspacing="0" cellpadding="5" style="width: 300px" align = center>
+    <tbody>
+      <tr>
+        <td>&nbsp;&nbsp;ชื่อผู้ใช้ :</td>
+        <td>
+                <input name="username" type="text" id="username">
+        </td>
+      </tr>
+      <tr>
+        <td> รหัสผ่าน :</td>
+        <td>
+                <input name="password" type="password" id="password">
+        </td>
+      </tr>
+      <tr>
+        <td> </td>
+        <td>  
+                <input type="submit" name="btnSubmit" value="เข้าสู่ระบบ">
+        </td>
+      </tr>
+    </tbody>
+  </table>
     
 </body>
 </html>
